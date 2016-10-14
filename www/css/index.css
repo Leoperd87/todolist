@@ -1,0 +1,93 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background: lightgrey;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+li {
+    height: 18px;
+    background: white;
+    border-radius: 16px;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+li * {
+    display: block;
+    float: left;
+}
+li:after {
+    content: '';
+    display:block;
+    clear: both;
+}
+
+.remove {
+    height:16px;
+    width: 16px;
+    background: url(../img/remove.png);
+    margin: 1px 0;
+}
+
+.down {
+    height:16px;
+    width: 16px;
+    background: url(../img/down.png);
+    margin: 1px 0;
+}
+
+.up {
+    height:16px;
+    width: 16px;
+    background: url(../img/up.png);
+    margin: 1px 0;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+input[type="checkbox"]+span {
+    height:16px;
+    width: 16px;
+    background: url(../img/uncheck.png);
+    margin: 1px 0;
+}
+
+input[type="checkbox"]:checked+span {
+    background: url(../img/check.png);
+}
+.top-add-button, .bottom-add-button {
+    height: 16px;
+    margin: 0 auto;
+    float: none;
+    background: url(../img/add.png) center center no-repeat;
+}
+
+input[type="text"] {
+    background: none;
+    font-size: 14px;
+    padding: 0;
+    margin: 0 10px;
+    border: 1px solid white;
+    width: calc(100% - 86px)
+}
+
+input[type="text"]:focus {
+    border: 1px solid black;
+    outline: none;
+}
+
+.hidden {
+    width: 0;
+    height: 0;
+    margin: 30px 16px 0 0;
+}
